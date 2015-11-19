@@ -2,7 +2,7 @@ var SongListItemView = Backbone.View.extend({
 
   tagName: 'tr',
 
-  template: _.template('<td>(<%= artist %>)</td><td><%= title %></td>'),
+  template: _.template('<td><%= artist %></td><td><%= title %></td></td><td><%= playCount %></td>'),
 
   initialize: function() {
    // this.render();
