@@ -9,6 +9,11 @@ var SongListItemView = Backbone.View.extend({
   },
 
   events: {
+    'click': function() {
+      //add song to playlist
+      console.log("clicked");
+      this.model.addToPlayList();
+    }
 
   },
 

@@ -9,5 +9,16 @@ var Song = Backbone.Model.extend({
 
   initialize: function() {
     console.log("You've created a new song");
+  },
+
+  addToPlayList: function() {
+    console.log("triggered");
+    this.trigger('addToPlayList', this);
+  },
+
+  removeFromPlayList: function() {
+    console.log("removed");
+    this.trigger('removeFromPlayList', this);
   }
+
 });

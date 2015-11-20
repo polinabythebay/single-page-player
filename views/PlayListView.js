@@ -6,6 +6,14 @@ var PlayListView = Backbone.View.extend({
 
   initialize: function() {
     this.render();
+
+    this.collection.on('add', function() {
+      this.render();
+    }, this);
+
+    this.collection.on('remove', function() {
+      this.render();
+    }, this);
   },
 
   render: function() {

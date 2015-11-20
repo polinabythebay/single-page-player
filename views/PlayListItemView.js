@@ -8,6 +8,10 @@ var PlayListItemView = Backbone.View.extend({
   },
 
   events: {
+    'click': function() {
+      //remove song from playlist
+      this.model.removeFromPlayList();
+    }
 
   },
 

@@ -1,3 +1,10 @@
 var Songs = Backbone.Collection.extend({
-  model: Song
+  model: Song,
+
+  initialize: function() {
+
+  
+
+  } 
+
 });

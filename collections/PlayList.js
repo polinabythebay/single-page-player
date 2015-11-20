@@ -1,3 +1,8 @@
 var PlayList = Songs.extend({
-  model: Song
+  model: Song,
+
+  initialize: function() {
+    
+  
+  }
 });
